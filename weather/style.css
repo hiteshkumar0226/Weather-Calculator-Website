@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'DM sans','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+	background-color: rgb(201, 226, 88);
+}
+h1{
+	text-align: center;
+	height: 10vh;
+	width: 100vw;
+	color: rgb(57, 192, 57);
+}
+#container{
+	height: 90vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 5%;
+	
+}
+.form{
+	height: 80%;
+	width: 40%;
+	background-color: rgb(80, 199, 169);
+	border-radius: 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5vh;
+}
+.form input{
+	font-size: 1.2rem;
+	padding: 1vh 1vw;
+	border-radius: 1vw;
+	border: 2px solid black;
+}
+.form input:focus{
+	outline: none;
+}
+.form input[type='submit']{
+	padding: 1vh 1vw;
+	background-color: rgb(255, 85, 0);
+	cursor: pointer;
+	color: rgb(202, 52, 52);
+	font-weight: 500;
+}
+#history{
+	height: 45%;
+	width: 90%;
+	overflow-y: scroll;
+}
+#history p{
+	color: rgb(53, 54, 172);
+	background-color: rgb(202, 114, 59);
+	display: inline-block;
+	padding: .7vh .7vw;
+	border-radius: 1vmin;
+	transition-duration: 200ms;
+	margin: 0.5vh 1vw;
+}
+#history p:hover{
+	cursor: pointer;
+	border-radius: 2vmin;
+	transform: scale(1.1);
+	outline: 1px solid black;
+}
+.result{
+	height: 80%;
+	width: 40%;
+	background-color: rgb(37, 114, 78);
+	border-radius: 1vw;
+}
+.result h2{
+	text-align: center;
+	padding: 2vh 0;
+}
+.details{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 85%;
+	width: 100%;
+}
+.info-strip{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(219, 219, 219);
+	padding: 3vh 0;
+	font-size: 1.2rem;
+	border-left: 1vmin solid rgb(255, 85, 0);
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+}
+.info-strip:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	border: none;
+	outline: 0.8vmin solid rgb(225, 85, 0);
+	background-color: rgba(197, 197, 197, 1);
+	border-radius: 2vmin;
+}
+.info-strip p{
+	padding: 0 2vw;
+}
+
+/* Hover on heading */
+h1:hover{
+	transform: scale(1.05);
+	transition: 0.3s;
+	color: rgb(71, 139, 218);
+	cursor: pointer;
+}
+
+/* Hover on form box */
+.form:hover{
+	transform: scale(1.03);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+	transition: 0.3s;
+}
+
+/* Hover on inputs */
+.form input:hover{
+	background-color: rgb(240, 240, 240);
+	border-color: rgb(255, 85, 0);
+	transition: 0.3s;
+}
+
+/* Hover on submit button */
+.form input[type='submit']:hover{
+	background-color: rgb(255, 120, 40);
+	color: white;
+	transform: scale(1.1);
+	transition: 0.3s;
+}
+
+/* Hover on history container */
+#history:hover{
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 1vw;
+	transition: 0.3s;
+}
+
+/* Hover on result panel */
+.result:hover{
+	transform: scale(1.03);
+	box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+	transition: 0.3s;
+}
+
+/* Hover on result title */
+.result h2:hover{
+	color: rgb(255, 85, 0);
+	transition: 0.3s;
+}
+
